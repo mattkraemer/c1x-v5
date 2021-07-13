@@ -1,0 +1,10 @@
+<svg viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#001220" d="M0 0h900v600H0z"/>
+  <g fill="#A7233A">
+    <circle r="147" cx="716" cy="162"/>
+    <circle r="65" cx="90" cy="588"/>
+    <circle r="117" cx="874" cy="556"/>
+    <circle r="71" cx="298" cy="205"/>
+    <circle r="76" cx="505" cy="455"/>
+  </g>
+</svg>
