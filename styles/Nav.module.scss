@@ -1,7 +1,21 @@
 .navbar {
-  padding: 2rem;
-  position: fixed;
   color: #e9e9e9;
+  padding: 2rem 0;
   width: 100%;
-  background: linear-gradient(to bottom, #000, transparent);
+  z-index: 1050;
+  position: absolute;
+  top: 0;
+  .navbarInner {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      gap: 1em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+      }
+    }
+  }
 }

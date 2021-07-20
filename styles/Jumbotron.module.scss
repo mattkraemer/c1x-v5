@@ -1,0 +1,52 @@
+.jumbotron {
+  min-height: 100vh;
+  display: flex;
+  background: darken(#151424,3);
+  position: relative;
+  overflow: hidden;
+  .inner {
+    padding: 6rem 4rem;
+    z-index: 1050;
+    display: flex;
+    margin: auto;
+    position: relative;
+    h1 {
+      font-weight: 700;
+      font-size: 6rem;
+      line-height: 1;
+      -webkit-letter-spacing: -2px;
+      -moz-letter-spacing: -2px;
+      -ms-letter-spacing: -2px;
+      letter-spacing: -2px;
+      color: rgba(255,255,255,0.96);
+      text-shadow: 0 0 80px rgb(192 219 255 / 48%), 0 0 32px rgb(65 120 255 / 24%);
+      pointer-events: none;
+      margin-bottom: 3rem;
+      margin-top: 0rem;
+      width: 60%;
+    }
+    h2 {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.75em;
+      font-weight: 300;
+      line-height: 1.15em;
+      margin: 0 0 1rem 0;
+      width: 60%;
+      text-shadow: 0 0 40px rgb(192 219 255 / 38%), 0 0 16px rgb(65 120 255 / 24%);
+    }
+    p {
+      color: rgba(255, 255, 255, 0.95);
+      background: #090909;
+      display: inline-block;
+      padding: 1rem 2rem;
+    }
+  }
+  .jumbo {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    height: 80%;
+  }
+}
