@@ -23,9 +23,9 @@ export default function Home() {
         <main>
           <section className="content">
             <Jumbotron />
+            <Techstack />
             <Services />
             <Principles />
-            <Techstack />
             <Projects />
             <About />
           </section>

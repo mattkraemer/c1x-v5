@@ -10,13 +10,13 @@ export default function Nav() {
         </header>
         <ul>
           <li>
+            <Link href="#">Techstack</Link>
+          </li>
+          <li>
             <Link href="#">Services</Link>
           </li>
           <li>
             <Link href="#">Principles</Link>
-          </li>
-          <li>
-            <Link href="#">Techstack</Link>
           </li>
           <li>
             <Link href="#">Projects</Link>

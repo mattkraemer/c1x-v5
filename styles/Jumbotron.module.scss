@@ -48,7 +48,6 @@
       }
       h2 {
         color: rgba(255, 255, 255, 0.75);
-        font-size: 1.75em;
         font-weight: 300;
         line-height: 1.15em;
         margin: 0 0 1rem 0;
@@ -56,9 +55,12 @@
       }
       p {
         color: rgba(255, 255, 255, 0.95);
-        background: conic-gradient(from 90deg at 50% 0%, darken(#151424,5), 50%, darken(#151424,3), transparent);
+        background: linear-gradient(to bottom right, darken(#151424,5), transparent);
+        box-shadow: 0 0 50px rgb(192 219 255 / 5%), 0 0 16px rgb(65 120 255 / 5%);
+        border: 1px solid darken(#151424,6);
         display: inline-block;
         padding: 1rem 2rem;
+        border-radius: .25rem;
       }
     }
     .right {
@@ -70,16 +72,6 @@
         height: 100%;
         z-index: -1;
       }
-    }
-  }
-  .rotate {
-    stroke-dashoffset: 0;
-    animation: dash 5s linear infinite;
-  }
-  
-  @keyframes dash {
-    to {
-      stroke-dashoffset: 100;
     }
   }
 }
@@ -97,6 +89,9 @@
         h1 {
           font-size: 5rem;
         }
+        h2 {
+          font-size: 1.5em;
+        }
       }
     }
   }
@@ -109,6 +104,9 @@
       .left {
         h1 {
           font-size: 7rem;
+        }
+        h2 {
+          font-size: 1.75em;
         }
       }
     }

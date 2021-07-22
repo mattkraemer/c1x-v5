@@ -290,7 +290,6 @@ function SvgComponent(props) {
           filter="url(#prefix__g)"
         />
         <circle
-          className={styles.rotate}
           r={45}
           cy={7.126}
           cx={-103.395}

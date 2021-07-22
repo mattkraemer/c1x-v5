@@ -7,6 +7,7 @@ body {
   background: #151424;
   position: relative;
   z-index: 1050;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -16,12 +17,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-// Layout
-.layout {
-  display: grid;
-  gap: 4rem;
 }
 
 // Container
