@@ -64,6 +64,7 @@ $background: darken($sourceColor,5);
     position: relative;
     z-index: 2;
     h1 {
+      margin: auto;
       font-weight: 700;
       font-size: 3em;
       line-height: 1;
@@ -76,12 +77,6 @@ $background: darken($sourceColor,5);
       margin-bottom: 2rem;
       margin-top: 0rem;
       width: min-content;
-    }
-    h2 {
-      margin: 0;
-    }
-    p {
-      margin: 0;
     }
   }
   .wrapper {
@@ -112,6 +107,7 @@ $background: darken($sourceColor,5);
           padding: .5rem 1rem .5rem 2.5rem;
           background: rgba(darken($sourceColor, 5), .85);
           position: relative;
+          font-weight: 500;
           &::before {
             content: "";
             position: absolute;

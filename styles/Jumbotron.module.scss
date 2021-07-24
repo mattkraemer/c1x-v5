@@ -55,9 +55,9 @@
       }
       p {
         color: rgba(255, 255, 255, 0.95);
-        background: linear-gradient(to bottom right, darken(#151424,5), transparent);
+        background: linear-gradient(to bottom right, blueviolet, blue);
+        border: 1px solid darken(blueviolet,25);
         box-shadow: 0 0 50px rgb(192 219 255 / 5%), 0 0 16px rgb(65 120 255 / 5%);
-        border: 1px solid darken(#151424,6);
         display: inline-block;
         padding: 1rem 2rem;
         border-radius: .25rem;

@@ -18,7 +18,7 @@ export default function Home() {
         <title>c1x.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="layout">
+      <div className={styles.layout}>
         <Nav />
         <main>
           <section className="content">
