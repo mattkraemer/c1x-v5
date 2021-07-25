@@ -25,7 +25,6 @@ export default function Home() {
             <Jumbotron />
             <Techstack />
             <Services />
-            <Principles />
             <Projects />
             <About />
           </section>
