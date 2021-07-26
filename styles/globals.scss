@@ -1,13 +1,14 @@
+$background: #151424;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: #151424;
+  background-color: $background;
   position: relative;
   z-index: 1050;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
