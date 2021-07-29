@@ -3,12 +3,6 @@ import styles from '../../styles/Techstack.module.scss'
 export default function Techstack() {
   return (
     <section className={styles.techstack}>
-      <div className={styles.circles}>
-        <div className={`${styles.circle} ${styles.circle1}`}></div>
-        <div className={`${styles.circle} ${styles.circle2}`}></div>
-        <div className={`${styles.circle} ${styles.circle3}`}></div>
-        <div className={`${styles.circle} ${styles.circle4}`}></div>
-      </div>
       <div className="container">
         <header>
           <h1>Techstack</h1>
