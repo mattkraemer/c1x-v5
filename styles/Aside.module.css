@@ -1,0 +1,14 @@
+.aside {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 2rem;
+  top: 0;
+  color: #e9e9e9;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1050;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent));
+  background: linear-gradient(to bottom, #000, transparent);
+}
+/*# sourceMappingURL=Aside.module.css.map */
