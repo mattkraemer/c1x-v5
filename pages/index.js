@@ -6,7 +6,6 @@ import Nav from '../components/Nav';
 import Aside from '../components/Aside';
 import Jumbotron from '../components/Jumbotron';
 import Services from '../components/Services';
-import Principles from '../components/Principles';
 import Techstack from '../components/Techstack';
 import Projects from '../components/Projects';
 import About from '../components/About';
