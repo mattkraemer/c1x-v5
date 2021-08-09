@@ -29,7 +29,6 @@ $background: darken($sourceColor,5);
   .wrapper {
     padding: 4rem;
     background: radial-gradient(darken($sourceColor,10), darken($sourceColor,2));
-    box-shadow: 0 0 40px rgb(192 219 255 / 8%), 0 0 32px rgb(65 120 255 / 4%);
     .grid {
       display: grid;
       margin: 0 -6rem;
