@@ -28,7 +28,6 @@ $background: darken($sourceColor,5);
   }
   .wrapper {
     padding: 4rem;
-    background: radial-gradient(darken($sourceColor,10), darken($sourceColor,2));
     .grid {
       display: grid;
       margin: 0 -6rem;
