@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     filter: blur(150px);
-    background: linear-gradient(to bottom right, rgba(black,.5), rgba(blueviolet, 0.15), rgba(black,1));
+    background: linear-gradient(to bottom right, rgba(black,.5), rgba(blueviolet, 0.35), rgba(black,1));
     z-index: -2;
   }
   &::after {
@@ -25,31 +25,6 @@
     background-position: top;
     z-index: -3;
     opacity: .15;
-  }
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 75%;
-    background-repeat: no-repeat;
-    z-index: -1;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='600' preserveAspectRatio='none' viewBox='0 0 1440 600'%3E%3Cg mask='url(&quot;%23a&quot;)' fill='none' stroke='rgba(0, 255, 255, 1)' stroke-width='2'%3E%3Cpath d='M-2809.882 122c288.002 50.8 864.002 261.4 1440 254 576.002-7.4 878.022-321.2 1440-291C632.09 115.2 1166.02 438.6 1440 527'/%3E%3Cpath d='M-2306.375 215c288.005 50.8 864.005 277.4 1440 254 576.005-23.4 978.725-365.6 1440-371C1034.9 92.6 1266.73 373.2 1440 442'/%3E%3Cpath d='M-1350.806 283c287.996 26.8 863.996 134.2 1440 134 575.996-.2 1169.836-137.4 1440-135 270.166 2.4-71.354 117.6-89.194 147'/%3E%3C/g%3E%3Cdefs%3E%3Cmask id='a'%3E%3Cpath fill='%23fff' d='M0 0h1440v600H0z'/%3E%3C/mask%3E%3C/defs%3E%3C/svg%3E");
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: 100% 75%;
-      background-repeat: no-repeat;
-      background-position: center;
-      filter: blur(35px);
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='600' preserveAspectRatio='none' viewBox='0 0 1440 600'%3E%3Cg mask='url(&quot;%23a&quot;)' fill='none' stroke='rgba(138, 43, 226, 1)' stroke-width='10'%3E%3Cpath d='M-2809.882 122c288.002 50.8 864.002 261.4 1440 254 576.002-7.4 878.022-321.2 1440-291C632.09 115.2 1166.02 438.6 1440 527'/%3E%3Cpath d='M-2306.375 215c288.005 50.8 864.005 277.4 1440 254 576.005-23.4 978.725-365.6 1440-371C1034.9 92.6 1266.73 373.2 1440 442'/%3E%3Cpath d='M-1350.806 283c287.996 26.8 863.996 134.2 1440 134 575.996-.2 1169.836-137.4 1440-135 270.166 2.4-71.354 117.6-89.194 147'/%3E%3C/g%3E%3Cdefs%3E%3Cmask id='a'%3E%3Cpath fill='%23fff' d='M0 0h1440v600H0z'/%3E%3C/mask%3E%3C/defs%3E%3C/svg%3E");
-    }
   }
   .inner {
     text-align: center;

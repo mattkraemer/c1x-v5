@@ -4,7 +4,6 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <div class={styles.header}>
-      <div class={styles.background} />
       <div class="container">
         <div class={styles.inner}>
           <h2>Hej!</h2>

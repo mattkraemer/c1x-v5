@@ -1,7 +1,8 @@
 .about {
   padding: 4rem 0;
-  h1 {
+  .headline {
     color: #fff;
+    text-align: center;
   }
   .grid {
     display: grid;
@@ -23,6 +24,18 @@
       background: rgba(black,.15);
       padding: 2rem;
       backdrop-filter: blur(25px);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(blueviolet,.05);
+        z-index: -1;
+        filter: blur(15px);
+      }
       p {
         color: #fff;
         margin: 0;
@@ -65,6 +78,7 @@
           width: 100%;
           h1 {
             font-size: 1.25em;
+            color: #fff;
             margin: 0 0 1rem 0;
             position: relative;
             text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
@@ -153,6 +167,41 @@
         background: linear-gradient(to bottom right, rgba(blueviolet, .05), transparent, transparent);
         backdrop-filter: blur(25px);
         z-index: -1;
+      }
+      .rightCircles {
+        position: absolute;
+        content: "";
+        top: 4rem;
+        left: 2.74rem;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 100%;
+        background: linear-gradient(to bottom right, rgba(cyan,.05), rgba(blueviolet,.15));
+        z-index: -1;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(cyan,.25);
+          z-index: -1;
+          border-radius: 100%;
+          filter: blur(15px);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(blueviolet,.25);
+          z-index: -1;
+          border-radius: 100%;
+          filter: blur(30px);
+        }
       }
     }
   }
