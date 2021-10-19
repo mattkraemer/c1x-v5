@@ -1,0 +1,15 @@
+.footer {
+  background: rgba(black, .25);
+  padding: 6rem 0;
+  .grid {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: rgba(#fff,.5);
+      &:hover {
+        color: cyan;
+      }
+    }
+  }
+}
