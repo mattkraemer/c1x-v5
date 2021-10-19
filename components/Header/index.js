@@ -7,7 +7,7 @@ export default function Header() {
       <div class="container">
         <div class={styles.inner}>
           <h2>Hej!</h2>
-          <h1><span>I build state-of-the-art User Interfaces, Websites & Web Applications</span></h1>
+          <h1>I build state-of-the-art User Interfaces, Websites & Web Applications</h1>
           <p>
             Check out my <Link href="#projects"><a>current projects</a></Link> or <Link href="#about"><a>learn more about me</a></Link>.
           </p>
