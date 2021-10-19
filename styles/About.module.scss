@@ -65,68 +65,48 @@
           width: 100%;
           h1 {
             font-size: 1.25em;
-            margin: 0 0 .75rem 0;
-            padding: 0 0 .75rem 0;
+            margin: 0 0 1rem 0;
             position: relative;
             text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
-            &:not(:last-child)::before {
-              content: "";
-              position: absolute;
-              left: 0;
-              bottom: 0;
-              width: 100%;
-              height: 1px;
-              margin: auto;
-              background: linear-gradient(to right, cyan, transparent);
-            }
-            &:not(:last-child)::after {
-              content: "";
-              position: absolute;
-              left: 0;
-              bottom: 0;
-              width: 100%;
-              height: 1px;
-              margin: auto;
-              background: linear-gradient(to right, cyan, cyan);
-              filter: blur(10px);
-            }
           }
           span {
             color: #fff;
-            display: inline-flex;
+            display: flex;
+            font-weight: 500;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
+            background: rgba(blueviolet,.15);
+            border: 1.5px solid blueviolet;
+            padding: .75rem 1rem;
+            border-radius: 25px;
+            gap: .5rem;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(blueviolet,.5);
+              z-index: -1;
+              filter: blur(15px);
+            }
+            svg {
+              width: 1.5rem;
+              height: 1.5rem;
+              stroke: #fff;
+            }
             &.available {
               color: cyan;
-              font-weight: 500;
-              position: relative;
-              text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
               background: rgba(cyan,.15);
-              border: 1.5px solid cyan;
-              padding: .5rem 1rem .5rem 1.75rem;
-              border-radius: 25px;
+              border-color: cyan;
               &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: .75rem;
-                bottom: 0;
-                height: .5rem;
-                width: .5rem;
-                margin: auto;
-                background-color: cyan;
-                border-radius: 100%;
+                background: rgba(cyan,.25);
               }
-              &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: .75rem;
-                bottom: 0;
-                height: .5rem;
-                width: .5rem;
-                margin: auto;
-                background-color: cyan;
-                filter: blur(5px);
-                border-radius: 100%;
+              svg {
+                stroke: cyan;
               }
             }
           }

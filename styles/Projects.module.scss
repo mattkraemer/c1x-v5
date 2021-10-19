@@ -48,13 +48,35 @@
     article {
       backdrop-filter: blur(50px);
       background: rgba(black, .25);
+      height: 100%;
+      transition: all .5s ease-in;
+      &::before {
+        transition: all .15s ease-in;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(70px);
+        background: cyan;
+        z-index: -3;
+        opacity: 0;
+      }
+      &:hover {
+        box-shadow: 0 0 30px -10px rgba(blueviolet, 0.35);
+        &::before {
+          opacity: .15;
+        }
+      }
       header {
         background: rgba(black,.25);
         padding: 2rem 2rem 1rem 2rem;
         span {
-          color: rgba(cyan,.75);
+          color: cyan;
           margin: 0 0 1rem 0;
           display: inline-block;
+          font-weight: 500;
         }
         h1 {
           margin: 0 0 1rem 0;
@@ -65,6 +87,7 @@
         }
       }
       .techstack {
+        margin-top: auto;
         padding: 1rem 2rem 2rem 2rem;
         h1 {
           font-size: 1.15em;
@@ -77,13 +100,25 @@
           flex-wrap: wrap;
           gap: 1rem;
           li {
-            color: #fff;
+            color: cyan;
             position: relative;
             text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
             background: rgba(cyan,.15);
             border: 1.5px solid cyan;
             padding: .5rem 1rem;
+            font-weight: 500;
             border-radius: 25px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(cyan,.25);
+              z-index: -1;
+              filter: blur(15px);
+            }
           }
         }
       }

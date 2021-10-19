@@ -11,23 +11,47 @@ export default function About() {
               I have over 15 years of experience in building Frontends for Websites and Web Applications with HTML, CSS and Javascript.
             </p>
             <p>
-              I started building Web Applications using the <mark>React.js</mark> and <mark>Next.js</mark> Frameworks in 2015 and since 2018 I use (besides vanilla CSS) 
-              <mark>TailwindCSS</mark> to build fast and consistent User Interfaces. 
+              I started building Web Applications using the <mark>React.js</mark> and <mark>Next.js</mark> Frameworks in 2015 and since 2018 I use (besides vanilla CSS) <mark>TailwindCSS</mark> to build fast and consistent User Interfaces. 
               <br /><br />
               I also have experience working with popular CSS Frameworks like <mark>Bootstrap</mark> and <mark>Bulma</mark>.
             </p>
             <div class={styles.details}>
               <article>
                 <h1>Location</h1>
-                <span>Germany</span>
+                <span>
+                  <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M70 4.142a43.75 43.75 0 0 1 43.75 43.75c0 20.69-32.083 72.222-41.294 86.625a2.917 2.917 0 0 1-4.912 0C58.334 120.12 26.25 68.583 26.25 47.892A43.75 43.75 0 0 1 70 4.142Z" stroke-width="5.83333"/>
+                      <path d="M52.5 47.892a17.5 17.5 0 1 0 35 0 17.5 17.5 0 1 0-35 0Z" stroke-width="5.83333"/>
+                    </g>
+                  </svg>
+                  Germany
+                </span>
               </article>
               <article>
                 <h1>Timezone</h1>
-                <span>UTC + 2</span>
+                <span>
+                  <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11.072 102.072h44.345M14.653 32.072h110.74M64.167 67.072H2.98M66.372 136.978a67.083 67.083 0 1 1 70.711-69.895" stroke-width="5.83333"/>
+                      <path d="M65.736 3.057c-35 37.916-34.364 87.255.636 133.921M74.258 3.057a94.074 94.074 0 0 1 24.909 49.472M67.083 102.083a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z" stroke-width="5.83333"/>
+                      <path d="M113.75 102.083h-11.667v-17.5" stroke-width="5.83333"/>
+                    </g>
+                  </svg>
+                  UTC + 2
+                </span>
               </article>
               <article>
                 <h1>Status</h1>
-                <span class={styles.available}>Available</span>
+                <span class={styles.available}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="scale(5.83333)">
+                      <path d="m18 7-6.38 8.66a1 1 0 0 1-.68.4 1 1 0 0 1-.75-.21L6 12.5"/>
+                      <circle cx="12" cy="12" r="11.5"/>
+                    </g>
+                  </svg>
+                  Available
+                </span>
               </article>
             </div>
           </div>
