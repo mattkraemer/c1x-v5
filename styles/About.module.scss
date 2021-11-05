@@ -21,7 +21,6 @@
       display: grid;
       background: rgba(black,.15);
       padding: 2rem;
-      backdrop-filter: blur(25px);
       position: relative;
       &::before {
         content: "";
@@ -164,7 +163,6 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(to bottom right, rgba(blueviolet, .05), transparent, transparent);
-        backdrop-filter: blur(25px);
         z-index: -1;
       }
       .rightCircles {
