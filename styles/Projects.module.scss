@@ -1,31 +1,4 @@
 .projects {
-  padding: 4rem 0;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: bottom;
-    background-repeat: repeat-x;
-    z-index: -4;
-    filter: blur(35px);
-    background-image: url("data:image/svg+xml,%3Csvg id='visual' viewBox='0 0 900 600' width='900' height='600' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Cg fill='%238a2be2'%3E%3Ccircle r='25' cx='147' cy='392'%3E%3C/circle%3E%3Ccircle r='11' cx='443' cy='295'%3E%3C/circle%3E%3Ccircle r='18' cx='658' cy='377'%3E%3C/circle%3E%3Ccircle r='20' cx='610' cy='49'%3E%3C/circle%3E%3Ccircle r='22' cx='192' cy='330'%3E%3C/circle%3E%3Ccircle r='18' cx='874' cy='131'%3E%3C/circle%3E%3Ccircle r='10' cx='643' cy='274'%3E%3C/circle%3E%3Ccircle r='14' cx='345' cy='127'%3E%3C/circle%3E%3Ccircle r='15' cx='709' cy='375'%3E%3C/circle%3E%3Ccircle r='19' cx='578' cy='253'%3E%3C/circle%3E%3Ccircle r='17' cx='108' cy='186'%3E%3C/circle%3E%3Ccircle r='17' cx='592' cy='551'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E");
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: bottom;
-    background-repeat: repeat-x;
-    z-index: -3;
-    background-image: url("data:image/svg+xml,%3Csvg id='visual' viewBox='0 0 900 600' width='900' height='600' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Cg fill='none' stroke='%2300ffff' stroke-width='2'%3E%3Ccircle r='23' cx='147' cy='392'%3E%3C/circle%3E%3Ccircle r='9' cx='443' cy='295'%3E%3C/circle%3E%3Ccircle r='16' cx='658' cy='377'%3E%3C/circle%3E%3Ccircle r='18' cx='610' cy='49'%3E%3C/circle%3E%3Ccircle r='20' cx='192' cy='330'%3E%3C/circle%3E%3Ccircle r='16' cx='874' cy='131'%3E%3C/circle%3E%3Ccircle r='8' cx='643' cy='274'%3E%3C/circle%3E%3Ccircle r='12' cx='345' cy='127'%3E%3C/circle%3E%3Ccircle r='13' cx='709' cy='375'%3E%3C/circle%3E%3Ccircle r='17' cx='578' cy='253'%3E%3C/circle%3E%3Ccircle r='15' cx='108' cy='186'%3E%3C/circle%3E%3Ccircle r='15' cx='592' cy='551'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E");
-  }
   .headline {
     color: #fff;
     text-align: center;
@@ -33,79 +6,76 @@
   .grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      top: 0;
       left: 0;
+      top: 0;
+      bottom: 0;
       width: 100%;
       height: 100%;
+      margin: auto;
+      z-index: -10;
+      background: radial-gradient(cyan, blueviolet, transparent);
       filter: blur(150px);
-      background: linear-gradient(to bottom right, rgba(black,.5), rgba(blueviolet, 0.25), rgba(black,.5));
-      z-index: -2;
+      opacity: .5;
     }
-    article {
-      background: rgba(black, .25);
-      height: 100%;
-      transition: all .35s ease-in;
-      box-shadow: 0 0 30px -15px black;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
+    & > a {
+      border-radius: .5rem;
+      &:nth-child(odd) {
+        background: linear-gradient(to right, transparent, rgba(black,.75));
+      }
+      &:nth-child(even) {
+        background: linear-gradient(to left, transparent, rgba(black,.75));
+      }
+      article {
+        padding: 1rem;
+        transition: all .15s linear;
         width: 100%;
         height: 100%;
-        background: rgba(black,.5);
-        z-index: -1;
-      }
-      &:hover {
-        box-shadow: 0 0 30px -15px rgba(blueviolet, 0.5);
-      }
-      header {
-        background: rgba(black,.25);
-        padding: 2rem 2rem 1rem 2rem;
-        span {
-          color: cyan;
-          margin: 0 0 1rem 0;
-          display: inline-block;
-          font-weight: 500;
+        hr {
+          position: relative;
+          border: none;
+          padding: 1rem 0;
+          display: block;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            margin: auto;
+            background: linear-gradient(to right, cyan, transparent);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            margin: auto;
+            background: linear-gradient(to right, cyan, cyan);
+            filter: blur(10px);
+          }
         }
-        h1 {
-          margin: 0 0 1rem 0;
-          color: #fff;
-        }
-        p {
-          color: #fff;
-          margin: 0;
-        }
-      }
-      .techstack {
-        margin-top: auto;
-        padding: 1rem 2rem 2rem 2rem;
-        h1 {
-          font-size: 1.15em;
-          color: #fff;
-        }
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem;
-          li {
-            color: cyan;
-            position: relative;
+        header {
+          span {
             text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
             background: rgba(cyan,.15);
-            border: 1.5px solid cyan;
-            padding: .5rem 1rem;
-            font-weight: 500;
+            padding: .25rem .75rem;
             border-radius: 25px;
+            font-weight: 700;
+            font-size: 75%;
+            gap: .5rem;
+            position: relative;
+            margin: 0 0 .5rem 0;
+            display: inline-block;
             &::before {
               content: "";
               position: absolute;
@@ -113,9 +83,53 @@
               left: 0;
               width: 100%;
               height: 100%;
-              background: rgba(cyan,.25);
+              background: rgba(cyan,.5);
               z-index: -1;
               filter: blur(15px);
+            }
+          }
+          h1 {
+            margin: 0;
+            color: #fff;
+          }
+          p {
+            color: #fff;
+            margin: 0;
+          }
+        }
+        .techstack {
+          h1 {
+            font-size: 1.15em;
+            margin: 0 0 1rem 0;
+            color: cyan;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+            li {
+              text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
+              background: rgba(cyan,.15);
+              border: 1.5px solid cyan;
+              padding: .25rem .75rem;
+              border-radius: 25px;
+              font-weight: 500;
+              gap: .5rem;
+              position: relative;
+              color: #fff;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(cyan,.5);
+                z-index: -1;
+                filter: blur(15px);
+              }
             }
           }
         }

@@ -15,6 +15,7 @@ export default function Projects() {
                 <h1 class="truncate">todoIQ.com</h1>
                 <p>Todo List in your Browser - no registration needed.</p>
               </header>
+              <hr />
               <div class={styles.techstack}>
                 <h1>Techstack</h1>
                 <ul>
@@ -32,6 +33,7 @@ export default function Projects() {
                 <h1 class="truncate">APIbucket.net</h1>
                 <p>Database for Big Data APIs, Open Data and other Content APIs.</p>
               </header>
+              <hr />
               <div class={styles.techstack}>
                 <h1 class="truncate">Techstack</h1>
                 <ul>
@@ -49,6 +51,7 @@ export default function Projects() {
                 <h1 class="truncate">CountryCodesDB.com</h1>
                 <p>Data for 249 Countries including Regions and ISO-3166-2-Codes.</p>
               </header>
+              <hr />
               <div class={styles.techstack}>
                 <h1>Techstack</h1>
                 <ul>
@@ -66,6 +69,7 @@ export default function Projects() {
                 <h1 class="truncate">SVGMULE</h1>
                 <p>Free SVG Illustrations.</p>
               </header>
+              <hr />
               <div class={styles.techstack}>
                 <h1>Techstack</h1>
                 <ul>
@@ -83,6 +87,7 @@ export default function Projects() {
                 <h1 class="truncate">RSSBundler</h1>
                 <p>Bundling multiple RSS Feeds into a single Feed.</p>
               </header>
+              <hr />
               <div class={styles.techstack}>
                 <h1>Techstack</h1>
                 <ul>
