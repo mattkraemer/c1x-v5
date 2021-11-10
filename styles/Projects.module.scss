@@ -5,7 +5,7 @@
   }
   .grid {
     display: grid;
-    gap: 1rem;
+    gap: .5rem;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     position: relative;
     &::before {
@@ -29,6 +29,14 @@
       }
       &:nth-child(even) {
         background: linear-gradient(to left, transparent, rgba(black,.75));
+      }
+      &:hover {
+        &:nth-child(odd) {
+          background: linear-gradient(to right, rgba(black,.25), rgba(black,.75));
+        }
+        &:nth-child(even) {
+          background: linear-gradient(to left, rgba(black,.25), rgba(black,.75));
+        }
       }
       article {
         padding: 1rem;
