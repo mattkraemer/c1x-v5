@@ -18,6 +18,7 @@ export default function Layout({ children }) {
   return (
     <div class={styles.layout}>
       <div id="circle1" class={styles.circle1}></div>
+      <div class={styles.bgGrid}></div>
       <Navbar />
       <main class={styles.main}>
         {children}
