@@ -15,6 +15,19 @@
   z-index: -1;
 }
 
+.circle2 {
+  position:fixed;
+  transform:translate(-50%,50%);
+  bottom: 0;
+  height: 50vh;
+  width: 50vw;
+  border-radius:50%;
+  filter: blur(150px);
+  opacity: .75;
+  background: linear-gradient(to right, black, blueviolet, black);
+  z-index: -10;
+}
+
 .bgGrid {
   -webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
@@ -34,6 +47,7 @@
   will-change: transform; 
   background-position: center bottom;
   background-size: 4vw 4vw;
+  z-index: -10;
   background-image: 
   linear-gradient(to right, cyan 1px, transparent 1px), 
   linear-gradient(to bottom, cyan 1px, transparent 1px);
