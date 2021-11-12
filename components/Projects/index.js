@@ -17,7 +17,7 @@ export default function Projects() {
           <a href="https://www.todoiq.com" target="_blank">
             <article>
               <div class={styles.screenshot}>
-                <Image alt="Screenshot" class={styles.screenshot} src={todoIQ} layout="fill" />
+                <Image alt="Screenshot" class={styles.screenshot} src={todoIQ} layout="fill" placeholder="blur" />
               </div>
               <div class={styles.main}>
                 <header>
@@ -40,7 +40,7 @@ export default function Projects() {
           <a href="https://www.apibucket.net" target="_blank">
             <article>
               <div class={styles.screenshot}>
-                <Image alt="Screenshot" class={styles.screenshot} src={APIbucket} layout="fill" />
+                <Image alt="Screenshot" class={styles.screenshot} src={APIbucket} layout="fill" placeholder="blur" />
               </div>
               <div class={styles.main}>
                 <header>
@@ -63,7 +63,7 @@ export default function Projects() {
           <a href="https://www.countrycodesdb.com" target="_blank">
             <article>
               <div class={styles.screenshot}>
-                <Image alt="Screenshot" class={styles.screenshot} src={CountryCodesDB} layout="fill" />
+                <Image alt="Screenshot" class={styles.screenshot} src={CountryCodesDB} layout="fill" placeholder="blur" />
               </div>
               <div class={styles.main}>
                 <header>
@@ -86,7 +86,7 @@ export default function Projects() {
           <a href="https://svgmule.vercel.app/" target="_blank">
             <article>
               <div class={styles.screenshot}>
-                <Image alt="Screenshot" class={styles.screenshot} src={SVGMULE} layout="fill" />
+                <Image alt="Screenshot" class={styles.screenshot} src={SVGMULE} layout="fill" placeholder="blur" />
               </div>
               <div class={styles.main}>
                 <header>
@@ -109,7 +109,7 @@ export default function Projects() {
           <a href="https://rssbundler.netlify.app/" target="_blank">
             <article>
               <div class={styles.screenshot}>
-                <Image alt="Screenshot" class={styles.screenshot} src={RSSBundler} layout="fill" />
+                <Image alt="Screenshot" class={styles.screenshot} src={RSSBundler} layout="fill" placeholder="blur" />
               </div>
               <div class={styles.main}>
                 <header>
