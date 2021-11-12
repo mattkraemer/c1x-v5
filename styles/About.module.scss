@@ -1,5 +1,7 @@
 .about {
+  margin: 4rem 0 0 0;
   padding: 4rem 0;
+  background: linear-gradient(to bottom right, rgba(black,.5), transparent);
   .headline {
     color: #fff;
     text-align: center;
@@ -9,30 +11,20 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
       left: 0;
+      top: 0;
+      bottom: 0;
       width: 100%;
       height: 100%;
+      margin: auto;
+      z-index: -10;
+      background: radial-gradient(cyan, blueviolet, transparent);
       filter: blur(150px);
-      background: linear-gradient(to bottom right, rgba(black,.5), rgba(blueviolet, 0.45), rgba(black,.5));
-      z-index: -2;
+      opacity: .5;
     }
     .left {
       display: grid;
-      background: rgba(black,.15);
-      padding: 2rem;
       position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(blueviolet,.05);
-        z-index: -1;
-        filter: blur(15px);
-      }
       p {
         color: #fff;
         margin: 0;
@@ -40,8 +32,8 @@
           font-size: 1.25em;
           font-weight: 500;
           position: relative;
-          margin: 0 0 1.5rem 0;
-          padding: 0 0 1rem 0;
+          margin: 0 0 2rem 0;
+          padding: 0 0 2rem 0;
           &:not(:last-child)::before {
             content: "";
             position: absolute;
@@ -65,7 +57,7 @@
       }
       .details {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
         margin: 2rem 0 0 0;
         article {
@@ -126,79 +118,8 @@
       }
     }
     .right {
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        background-color: blueviolet;
-        filter: blur(100px);
-        border-radius: 100%;
-        opacity: .25;
-        z-index: -1;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        background-color: cyan;
-        filter: blur(100px);
-        border-radius: 100%;
-        opacity: .25;
-        z-index: -1;
-      }
-      .rightBg {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom right, rgba(blueviolet, .05), transparent, transparent);
-        z-index: -1;
-      }
-      .rightCircles {
-        position: absolute;
-        content: "";
-        top: 4rem;
-        left: 2.74rem;
-        width: 15rem;
-        height: 15rem;
-        border-radius: 100%;
-        background: linear-gradient(to bottom right, rgba(cyan,.05), rgba(blueviolet,.15));
-        z-index: -1;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(cyan,.25);
-          z-index: -1;
-          border-radius: 100%;
-          filter: blur(15px);
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(blueviolet,.25);
-          z-index: -1;
-          border-radius: 100%;
-          filter: blur(30px);
-        }
+      svg {
+        filter: drop-shadow(0 0 25px rgba(cyan,.25));
       }
     }
   }

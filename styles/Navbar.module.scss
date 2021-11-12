@@ -1,89 +1,105 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1050;
-  .logo {
-    color: #fff;
-    font-weight: 600;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: -10;
+    background: radial-gradient(cyan, blueviolet, red, transparent);
+    filter: blur(150px);
+    opacity: .5;
   }
   nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
     display: flex;
+    padding: 1em 2rem;
     justify-content: space-between;
-    gap: .25rem;
-    background: rgba(black,.35);
-    border-radius: 25px;
-    padding: .5rem 1rem;
-    a {
-      color: #fff;
-      position: relative;
-      padding: .5rem 1rem;
-      border-radius: 20px;
-      transition: all .15s linear;
+    .logo {
+      position: absolute;
       display: inline-flex;
-      font-weight: 500;
-      svg {
-        stroke: #fff;
-        height: 1.35rem;
-        width: 100%;
+      content: "";
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-top: 1rem;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 900;
+      z-index: 1;
+      span {
+        transform: rotate(-45deg);
+        text-transform: uppercase;
+        position: relative;
+        margin: auto;
+        text-shadow: 2px 2px 0 blue;
       }
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 100%;
-        height: 40px;
-        z-index: -1;
-        background: linear-gradient(to bottom, blueviolet, transparent);
-        filter: blur(25px);
-        opacity: 0;
+      .c1x {
       }
-      &:hover {
-        background-color: rgba(blueviolet,.05);
-        text-shadow: 0 0 40px rgb(192 219 255 / 28%), 0 0 16px rgb(65 120 255 / 14%);
-        &::after {
-          opacity: 1;
+      .dev {
+        margin-left: -27%;
+      }
+    }
+    .navSection {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      a:not(.button) {
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        &:hover {
+          color: cyan;
+          text-shadow: 1px 1px 0 blueviolet;
+        }
+        svg {
+          width: 1.5rem;
+          stroke: currentColor;
+          height: 1.5rem;
         }
       }
-    }
-  }
-  .button {
-    color: #fff;
-    display: flex;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
-    background: rgba(blueviolet,.15);
-    border: 1.5px solid blueviolet;
-    padding: .5rem 1rem;
-    border-radius: 25px;
-    gap: .5rem;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(blueviolet,.5);
-      z-index: -1;
-      filter: blur(15px);
-    }
-    &:hover {
-      background: rgba(blueviolet,.35);
-    }
-    svg {
-      stroke: #fff;
-      width: 1.5rem;
-      height: 1.5rem;
+      .button {
+        text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
+        background: rgba(cyan,.15);
+        display: inline-flex;
+        border: 1.5px solid cyan;
+        padding: .5rem 1rem;
+        border-radius: 25px;
+        gap: .5rem;
+        position: relative;
+        color: #fff;
+        transition: all .15s linear;
+        svg {
+          width: 1.5rem;
+          stroke: currentColor;
+          height: 1.5rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(cyan,.5);
+          z-index: -1;
+          filter: blur(15px);
+          transition: all .15s linear;
+        }
+        &:hover {
+          box-shadow: 2px 2px 0 0 blueviolet;
+          &::before {
+            background: rgba(cyan,.65);
+          }
+        }
+      }
     }
   }
 }
