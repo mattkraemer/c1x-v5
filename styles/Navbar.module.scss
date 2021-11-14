@@ -29,11 +29,32 @@
       top: 0;
       left: 50%;
       transform: translate(-50%, 0);
-      margin-top: 1rem;
       color: #fff;
       font-size: 2rem;
       font-weight: 900;
       z-index: 1;
+      padding: 1.5rem 1rem;
+      background: linear-gradient(to bottom, black, transparent);
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(to bottom, cyan, transparent, transparent);
+        filter: drop-shadow(0 0 2px blue);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(to bottom, cyan, transparent, transparent);
+        filter: drop-shadow(0 0 2px blue);
+      }
       span {
         transform: rotate(-45deg);
         text-transform: uppercase;
