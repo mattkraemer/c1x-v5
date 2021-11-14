@@ -1,3 +1,5 @@
+@import 'variables';
+
 .layout {
 }
 
@@ -10,7 +12,7 @@
   height: 8rem;
   width: 8rem;
   border-radius:50%;
-  background: radial-gradient(rgba(blueviolet,.5), transparent);
+  background: radial-gradient(rgba($primary,.5), transparent);
   filter: blur(50px);
   z-index: -1;
 }
@@ -24,7 +26,7 @@
   border-radius:50%;
   filter: blur(150px);
   opacity: .75;
-  background: linear-gradient(to right, black, blueviolet, black);
+  background: linear-gradient(to right, black, $primary, black);
   z-index: -10;
 }
 
@@ -50,8 +52,8 @@
   background-size: 4vw 4vw;
   z-index: -10;
   background-image: 
-  linear-gradient(to right, cyan 1px, transparent 1px), 
-  linear-gradient(to bottom, cyan 1px, transparent 1px);
+  linear-gradient(to right, $secondary 1px, transparent 1px), 
+  linear-gradient(to bottom, $secondary 1px, transparent 1px);
   &::after {
     content: "";
     position: absolute;

@@ -1,4 +1,5 @@
 @import 'normalize';
+@import 'variables';
 
 html,
 body {
@@ -16,7 +17,7 @@ body {
 
 a {
   text-decoration: none;
-  color: cyan;
+  color: $secondary;
 }
 
 * {
@@ -45,7 +46,7 @@ mark {
     width: 100%;
     height: 1px;
     margin: auto;
-    background: linear-gradient(to right, cyan, transparent);
+    background: linear-gradient(to right, $secondary, transparent);
   }
   &::after {
     content: "";
@@ -55,7 +56,7 @@ mark {
     width: 100%;
     height: 1px;
     margin: auto;
-    background: linear-gradient(to right, cyan, cyan);
+    background: linear-gradient(to right, $secondary, $secondary);
     filter: blur(10px);
   }
 }
@@ -70,7 +71,7 @@ mark {
   text-align: center;
   position: relative;
   z-index: 1;
-  text-shadow: 2px 2px 0 blueviolet;
+  text-shadow: 2px 2px 0 $primary;
   filter: drop-shadow(0 0 2px blue);
 }
 

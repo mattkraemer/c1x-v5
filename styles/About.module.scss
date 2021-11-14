@@ -1,7 +1,9 @@
+@import 'variables';
+
 .about {
   margin: 4rem 0 0 0;
   padding: 4rem 0;
-  background: linear-gradient(to bottom right, rgba(black,.5), transparent);
+  background: linear-gradient(to bottom right, rgba(darken($primary,50),.5), transparent);
   .grid {
     position: relative;
     &::before {
@@ -14,7 +16,7 @@
       height: 100%;
       margin: auto;
       z-index: -10;
-      background: radial-gradient(cyan, blueviolet, transparent);
+      background: radial-gradient($secondary, $primary, transparent);
       filter: blur(150px);
       opacity: .5;
     }
@@ -37,7 +39,7 @@
             bottom: 0;
             width: 100%;
             height: 1px;
-            background: linear-gradient(to right, cyan, transparent);
+            background: linear-gradient(to right, $secondary, transparent);
           }
           &:not(:last-child)::after {
             content: "";
@@ -46,7 +48,7 @@
             bottom: 0;
             width: 100%;
             height: 1px;
-            background: linear-gradient(to right, cyan, cyan);
+            background: linear-gradient(to right, $secondary, $secondary);
             filter: blur(10px);
           }
         }
@@ -59,7 +61,7 @@
         article {
           background: rgba(black, .15);
           box-shadow: 0 0 30px -15px black;
-          border: 1px solid rgba(blueviolet, .15);
+          border: 1px solid rgba($primary, .15);
           padding: 1rem;
           width: 100%;
           h1 {
@@ -77,8 +79,8 @@
             justify-content: center;
             position: relative;
             text-shadow: 0 0 40px rgb(192 219 255 / 48%), 0 0 16px rgb(65 120 255 / 24%);
-            background: rgba(blueviolet,.15);
-            border: 1.5px solid blueviolet;
+            background: rgba($primary,.15);
+            border: 1.5px solid $primary;
             padding: .75rem 1rem;
             border-radius: 25px;
             gap: .5rem;
@@ -89,7 +91,7 @@
               left: 0;
               width: 100%;
               height: 100%;
-              background: rgba(blueviolet,.5);
+              background: rgba($primary,.5);
               z-index: -1;
               filter: blur(15px);
             }
@@ -99,14 +101,14 @@
               stroke: #fff;
             }
             &.available {
-              color: cyan;
-              background: rgba(cyan,.15);
-              border-color: cyan;
+              color: $secondary;
+              background: rgba($secondary,.15);
+              border-color: $secondary;
               &::before {
-                background: rgba(cyan,.25);
+                background: rgba($secondary,.25);
               }
               svg {
-                stroke: cyan;
+                stroke: $secondary;
               }
             }
           }
@@ -115,7 +117,7 @@
     }
     .right {
       svg {
-        filter: drop-shadow(0 0 25px rgba(cyan,.25));
+        filter: drop-shadow(0 0 25px rgba($secondary,.25));
       }
     }
   }

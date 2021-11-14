@@ -1,3 +1,5 @@
+@import 'variables';
+
 .footer {
   background: rgba(black, .25);
   padding: 6rem 0;
@@ -8,7 +10,7 @@
     a {
       color: rgba(#fff,.5);
       &:hover {
-        color: cyan;
+        color: $secondary;
       }
     }
   }
