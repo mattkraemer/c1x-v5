@@ -65,6 +65,15 @@ mark {
   white-space: nowrap;
 }
 
+.headline {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 0 blueviolet;
+  filter: drop-shadow(0 0 2px blue);
+}
+
 /* Container */
 .container {
   max-width: 980px;

@@ -4,7 +4,7 @@ export default function Technologies() {
   return (
     <section id="technologies" class={styles.technologies}>
       <div class="container">
-        <h1 class={styles.headline}>Technologies</h1>
+        <h1 class="headline">Technologies</h1>
         <div class={styles.grid}>
             <article>
               <header>

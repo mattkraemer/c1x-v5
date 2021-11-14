@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section id="about" class={styles.about}>
       <div class="container">
-        <h1 class={styles.headline}>About me</h1>
+        <h1 class="headline">About me</h1>
         <div class={styles.grid}>
           <div class={styles.left}>
             <p class={styles.lead}>

@@ -39,7 +39,8 @@
         text-transform: uppercase;
         position: relative;
         margin: auto;
-        text-shadow: 2px 2px 0 blue;
+        text-shadow: 2px 2px 0 blueviolet;
+        filter: drop-shadow(0 0 2px blue);
       }
       .c1x {
       }
@@ -58,6 +59,7 @@
         &:hover {
           color: cyan;
           text-shadow: 1px 1px 0 blueviolet;
+          filter: drop-shadow(0 0 2px blue);
         }
         svg {
           width: 1.5rem;

@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section id="projects" class={styles.projects}>
       <div class="container">
-        <h1 class={styles.headline}>Projects</h1>
+        <h1 class="headline">Projects</h1>
       </div>
       <div class="container-lg">
         <div class={styles.grid}>
