@@ -23,7 +23,7 @@ export default function Projects() {
                 <header>
                   <span>2020</span>
                   <h1 class="truncate">todoIQ.com</h1>
-                  <p>Todo List in your Browser - no registration needed.</p>
+                  <p>Decentralized Todo List in your Browser - no registration, no database.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
