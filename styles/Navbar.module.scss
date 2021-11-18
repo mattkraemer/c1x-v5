@@ -37,7 +37,7 @@
       font-weight: 900;
       z-index: 1;
       padding: 1.5rem 1rem;
-      background: linear-gradient(to bottom, black, transparent);
+      background: linear-gradient(to bottom, rgba(black,.15), transparent);
       &::before {
         content: "";
         position: absolute;
@@ -98,6 +98,7 @@
         border: 1.5px solid $secondary;
         padding: .5rem 1rem;
         border-radius: 25px;
+        font-weight: 700;
         gap: .5rem;
         position: relative;
         color: #fff;

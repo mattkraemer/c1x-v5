@@ -29,7 +29,7 @@
   }
   .grid {
     display: grid;
-    gap: .5rem;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
     position: relative;
     &::before {
@@ -42,7 +42,7 @@
       height: 100%;
       margin: auto;
       z-index: -10;
-      background: radial-gradient($secondary, $primary, transparent);
+      background: radial-gradient($primary, transparent);
       filter: blur(150px);
       opacity: .5;
     }
