@@ -23,7 +23,7 @@ export default function Layout({ children }) {
     <div class={styles.layout}>
       <div id="circle1" class={styles.circle1}></div>
       <div id="circle2" class={styles.circle2}></div>
-      <div id="tronGrid" class={styles.bgGrid}></div>
+      {/* <div id="tronGrid" class={styles.bgGrid}></div> */}
       <Navbar />
       <main class={styles.main}>
         {children}
