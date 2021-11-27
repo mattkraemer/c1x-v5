@@ -19,12 +19,12 @@
 
 .circle2 {
   position:fixed;
-  transform:translate(-50%,50%);
+  transform: translate(-50%,80%);
   bottom: 0;
-  height: 50vh;
-  width: 50vw;
-  border-radius:50%;
-  filter: blur(150px);
+  height: 70vh;
+  width: 80vw;
+  border-radius: 50%;
+  filter: blur(250px);
   opacity: .75;
   background: linear-gradient(to right, black, $primary, black);
   z-index: -10;
