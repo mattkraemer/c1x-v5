@@ -11,11 +11,11 @@ export default function Layout({ children }) {
       circle2.style.left = e.pageX + 'px';
     });
 
-    let tronGridElem = document.querySelector('#tronGrid');
-    document.addEventListener('scroll', () => {
-      let offset = window.scrollY / (document.body.offsetHeight - window.innerHeight);
-      tronGridElem.style.transform = 'perspective(20vw) rotateX(40deg) scale(' + (offset+2) + ',' + (offset+1) + ') translateZ(0)';
-    })
+    // let tronGridElem = document.querySelector('#tronGrid');
+    // document.addEventListener('scroll', () => {
+    //   let offset = window.scrollY / (document.body.offsetHeight - window.innerHeight);
+    //   tronGridElem.style.transform = 'perspective(20vw) rotateX(40deg) scale(' + (offset+2) + ',' + (offset+1) + ') translateZ(0)';
+    // })
 
   })
 
