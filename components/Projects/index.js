@@ -45,7 +45,7 @@ export default function Projects() {
               </div>
               <div class={styles.main}>
                 <header>
-                  <span>2020</span>
+                  <span>2020 - Rebuild 2021</span>
                   <h1 class="truncate">todoIQ.com</h1>
                   <p>Decentralized Todo List in your Browser - no registration, no database.</p>
                 </header>
@@ -53,7 +53,7 @@ export default function Projects() {
                 <div class={styles.techstack}>
                   <h1>Techstack</h1>
                   <ul>
-                    <li>React.js</li>
+                    <li>Next.js</li>
                     <li>Netlify</li>
                     <li>TailwindCSS</li>
                   </ul>
