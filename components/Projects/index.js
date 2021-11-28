@@ -1,5 +1,6 @@
 import styles from '../../styles/Projects.module.css'
 import Image from 'next/image'
+import AltCoinList from '../../public/screenshots/altcoinlist.png'
 import todoIQ from '../../public/screenshots/todoiq.png'
 import RSSBundler from '../../public/screenshots/rssbundler.png'
 import CountryCodesDB from '../../public/screenshots/countrycodesdb.png'
@@ -14,6 +15,29 @@ export default function Projects() {
       </div>
       <div class="container-lg">
         <div class={styles.grid}>
+          <a href="https://altcoinlist.vercel.app/" target="_blank">
+            <article>
+              <div class={styles.screenshot}>
+                <Image alt="Screenshot" class={styles.screenshot} src={AltCoinList} layout="fill" placeholder="blur" />
+              </div>
+              <div class={styles.main}>
+                <header>
+                  <span>2021</span>
+                  <h1 class="truncate">AltCoinList</h1>
+                  <p>Showing performance data for a variety of altcoins.</p>
+                </header>
+                <hr />
+                <div class={styles.techstack}>
+                  <h1>Techstack</h1>
+                  <ul>
+                    <li>Next.js</li>
+                    <li>Vercel</li>
+                    <li>TailwindCSS</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
           <a href="https://www.todoiq.com" target="_blank">
             <article>
               <div class={styles.screenshot}>
