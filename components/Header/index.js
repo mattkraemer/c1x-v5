@@ -10,7 +10,7 @@ export default function Header() {
           <h1>I build state-of-the-art User Interfaces, Websites & Web Applications</h1>
           <div>
             <p>
-              Check out my <Link href="#projects"><a>current projects</a></Link> or <Link href="#about"><a>learn more about me</a></Link>.
+              Check out my <Link href="#projects">current projects</Link> or <Link href="#about">learn more about me</Link>.
             </p>
           </div>
         </div>
