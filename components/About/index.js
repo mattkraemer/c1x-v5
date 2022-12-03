@@ -8,12 +8,16 @@ export default function About() {
         <div class={styles.grid}>
           <div class={styles.left}>
             <p class={styles.lead}>
-              I have over 15 years of experience in building Frontends for Websites and Web Applications with HTML, CSS and Javascript.
+              With nearly two decades of experience in web development, I have a wide range of skills and expertise in various technologies.
             </p>
             <p>
-              I started building Web Applications using the <mark>React.js</mark> and <mark>Next.js</mark> Frameworks in 2015 and since 2018 I use (besides vanilla CSS) <mark>TailwindCSS</mark> to build fast and consistent User Interfaces. 
-              <br /><br />
-              I also have experience working with popular CSS Frameworks like <mark>Bootstrap</mark> and <mark>Bulma</mark>.
+              I built my first website in 2002 using <mark>HTML</mark> and <mark>CSS</mark>, and have since worked with languages such as <mark>PHP</mark>, <mark>JavaScript</mark>, and MySQL. I have also utilized popular content management systems like WordPress.
+            </p>
+            <p>
+              In recent years, I have focused on using <mark>React.js</mark> and <mark>Next.js</mark> to build modern, scalable applications. I was an early adopter of <mark>TailwindCSS</mark> and have experience with other CSS frameworks such as Bootstrap. In addition, I have experience with <mark>3D libraries</mark> like <mark>Three.js</mark>, as well as technologies like <mark>Node.js</mark>, <mark>Firebase</mark>, and <mark>Supabase</mark>. I have also worked with NoSQL databases like <mark>MongoDB</mark>.
+            </p>
+            <p>
+              My expertise also extends to authentication platforms like <mark>Auth0</mark>, and I have experience integrating payment providers like <mark>Stripe</mark> and <mark>Paddle</mark> into my products. I place a high value on <mark>accessibility</mark> and <mark>prioritize the user experience</mark> over following every new trend in web development.
             </p>
             <div class={styles.details}>
               <article>
