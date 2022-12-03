@@ -24,7 +24,7 @@ export default function Projects() {
                 <header>
                   <span>2021</span>
                   <h1 class="truncate">AltCoinList</h1>
-                  <p>Showing performance data for a variety of altcoins.</p>
+                  <p>AltCoinList is a web application that allows users to view performance data for various altcoins. The app is built using the Next.js framework and is hosted on Vercel. It uses TailwindCSS for styling.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
@@ -47,7 +47,7 @@ export default function Projects() {
                 <header>
                   <span>2020 - Rebuild 2021</span>
                   <h1 class="truncate">todoIQ.com</h1>
-                  <p>Decentralized Todo List in your Browser - no registration, no database.</p>
+                  <p>todoIQ.com is a decentralized todo list app that allows users to manage their tasks directly in their web browser. The app does not require registration or a database to function. It was initially built in 2020 and was subsequently rebuilt in 2021. The app is built using the Next.js framework and is hosted on Netlify. It uses TailwindCSS for styling.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
@@ -70,7 +70,7 @@ export default function Projects() {
                 <header>
                   <span>2020</span>
                   <h1 class="truncate">APIbucket.net</h1>
-                  <p>Database for Big Data APIs, Open Data and other Content APIs.</p>
+                  <p>APIbucket.net is a database for Big Data APIs, Open Data, and other content APIs. It was built in 2020 using the Gatsby.js framework and is hosted on Netlify. The app uses TailwindCSS for styling.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
@@ -93,7 +93,7 @@ export default function Projects() {
                 <header>
                   <span>2020</span>
                   <h1 class="truncate">CountryCodesDB.com</h1>
-                  <p>Data for 249 Countries including Regions and ISO-3166-2-Codes.</p>
+                  <p>Data for 249 Countries including Regions and ISO-3166-2-Codes. CountryCodesDB.com is a database of information about 249 countries, including their regions and ISO-3166-2 codes. The app was built in 2020 using the Gatsby.js framework and is hosted on Netlify. It uses Bootstrap 4 for styling.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
@@ -116,7 +116,7 @@ export default function Projects() {
                 <header>
                   <span>2020</span>
                   <h1 class="truncate">SVGMULE</h1>
-                  <p>Free SVG Illustrations.</p>
+                  <p>Free SVG Illustrations. It was built in 2020 using the Next.js framework and is hosted on Vercel. The app uses TailwindCSS for styling.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
@@ -139,7 +139,7 @@ export default function Projects() {
                 <header>
                   <span>2019</span>
                   <h1 class="truncate">RSSBundler</h1>
-                  <p>Bundling multiple RSS Feeds into a single Feed.</p>
+                  <p>RSSBundler is a web application that allows users to combine multiple RSS feeds into a single feed. The app was built in 2019 using the React.js framework and is hosted on Netlify. It uses TailwindCSS for styling.</p>
                 </header>
                 <hr />
                 <div class={styles.techstack}>
