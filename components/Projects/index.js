@@ -15,7 +15,7 @@ export default function Projects() {
       </div>
       <div class="container-lg">
         <div class={styles.grid}>
-          <a href="https://altcoinlist.vercel.app/" target="_blank">
+          <a href="https://altcoinlist.vercel.app/" target="_blank" rel="noreferrer">
             <article>
               <div class={styles.screenshot}>
                 <Image alt="Screenshot" class={styles.screenshot} src={AltCoinList} layout="fill" placeholder="blur" />
@@ -38,7 +38,7 @@ export default function Projects() {
               </div>
             </article>
           </a>
-          <a href="https://www.todoiq.com" target="_blank">
+          <a href="https://www.todoiq.com" target="_blank" rel="noreferrer">
             <article>
               <div class={styles.screenshot}>
                 <Image alt="Screenshot" class={styles.screenshot} src={todoIQ} layout="fill" placeholder="blur" />
@@ -61,7 +61,7 @@ export default function Projects() {
               </div>
             </article>
           </a>
-          <a href="https://www.apibucket.net" target="_blank">
+          <a href="https://www.apibucket.net" target="_blank" rel="noreferrer">
             <article>
               <div class={styles.screenshot}>
                 <Image alt="Screenshot" class={styles.screenshot} src={APIbucket} layout="fill" placeholder="blur" />
@@ -84,7 +84,7 @@ export default function Projects() {
               </div>
             </article>
           </a>
-          <a href="https://www.countrycodesdb.com" target="_blank">
+          <a href="https://www.countrycodesdb.com" target="_blank" rel="noreferrer">
             <article>
               <div class={styles.screenshot}>
                 <Image alt="Screenshot" class={styles.screenshot} src={CountryCodesDB} layout="fill" placeholder="blur" />
@@ -107,7 +107,7 @@ export default function Projects() {
               </div>
             </article>
           </a>
-          <a href="https://svgmule.vercel.app/" target="_blank">
+          <a href="https://svgmule.vercel.app/" target="_blank" rel="noreferrer">
             <article>
               <div class={styles.screenshot}>
                 <Image alt="Screenshot" class={styles.screenshot} src={SVGMULE} layout="fill" placeholder="blur" />
@@ -130,7 +130,7 @@ export default function Projects() {
               </div>
             </article>
           </a>
-          <a href="https://rssbundler.netlify.app/" target="_blank">
+          <a href="https://rssbundler.netlify.app/" target="_blank" rel="noreferrer">
             <article>
               <div class={styles.screenshot}>
                 <Image alt="Screenshot" class={styles.screenshot} src={RSSBundler} layout="fill" placeholder="blur" />
